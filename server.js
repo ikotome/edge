@@ -1,6 +1,6 @@
 import { createServer } from "vite";
 
-const blogHost = process.argv[2];
+const blogHost = process.argv.slice(2).filter((arg) => arg !== "--")[0];
 if (!blogHost) {
   throw new Error("ブログのドメイン名を指定してください");
 }
