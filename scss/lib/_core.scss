@@ -359,78 +359,8 @@ body {
 
 /* 記事下 */
 .entry-footer {
-    border-top: $entry-border-width solid $border-strong;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
     .social-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        > * {
-            position: relative;
-            width: 48px;
-            height: 48px;
-            border: $entry-border-width solid $border-strong;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            color: $text;
-            text-decoration: none;
-            overflow: hidden;
-            transition: background-color .2s ease, color .2s ease;
-            &::before {
-                content: 'SH';
-                font-size: .65rem;
-                font-weight: 700;
-                letter-spacing: .08em;
-            }
-            &:hover,
-            &:focus-visible {
-                background: $border-strong;
-                color: $background;
-            }
-            &:has([href*="b.hatena.ne.jp"], iframe[src*="b.hatena.ne.jp"])::before {
-                content: 'B!';
-                letter-spacing: -0.05em;
-            }
-            &:has([href*="twitter.com"], iframe[src*="twitter.com"], [data-service="twitter"])::before {
-                content: 'X';
-                font-size: .9rem;
-            }
-            &:has([href*="facebook.com"], iframe[src*="facebook.com"], [data-service="facebook"])::before {
-                content: 'f';
-                font-size: .85rem;
-                font-weight: 700;
-            }
-            &:has([href*="line.me"], iframe[src*="line.me"], [data-service="line"])::before {
-                content: 'LINE';
-                font-size: .6rem;
-                letter-spacing: .12em;
-            }
-            &:has([href*="pocket"], iframe[src*="pocket"], [data-service="pocket"])::before {
-                content: 'PKT';
-                font-size: .6rem;
-            }
-        }
-        > * > * {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-        }
-        img,
-        svg {
-            display: none;
-        }
+        margin-bottom: 1em;
     }
 }
 .entry-footer-section {
